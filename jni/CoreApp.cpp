@@ -1,6 +1,8 @@
-#include "ffmpeg.h"
 #include <string.h>
 
+extern "C"{
+#include "ffmpeg.h"
+}
 
 
 /*
@@ -8,6 +10,7 @@
  * Method:    run
  * Signature: (Ljava/lang/String;)I
  */
+extern "C"
 JNIEXPORT jint JNICALL Java_com_tangyx_video_ffmpeg_FFmpegRun_run(JNIEnv *env,
         jclass obj, jobjectArray commands) {
 
